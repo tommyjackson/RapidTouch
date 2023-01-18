@@ -8,7 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.tjackapps.rapidtouch.androidapp.ui.game.GameScreen
 import com.tjackapps.rapidtouch.androidapp.ui.menu.MenuScreen
-import com.tjackapps.rapidtouch.androidapp.ui.score.ScoreScreen
+import com.tjackapps.rapidtouch.androidapp.ui.score.HighScoreScreen
 import com.tjackapps.rapidtouch.androidapp.ui.tutorial.TutorialScreen
 
 @Composable
@@ -43,7 +43,7 @@ fun AppNavHost(
         composable(
             route = Screen.Score.route,
         ) {
-            ScoreScreen(
+            HighScoreScreen(
                 modifier = modifier.fillMaxSize(),
             )
         }
