@@ -26,6 +26,6 @@ android {
 dependencies {
     api(project(":data:preferences:api"))
     api(project(":data:preferences:android-impl"))
-    implementation("com.google.dagger:hilt-android:2.44.2")
-    kapt("com.google.dagger:hilt-compiler:2.44.2")
+    implementation("com.google.dagger:hilt-android:2.45")
+    kapt("com.google.dagger:hilt-compiler:2.45")
 }

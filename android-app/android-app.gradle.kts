@@ -22,7 +22,7 @@ android {
     }
 
     composeOptions {
-        val composeCompilerVersion = "1.3.2"
+        val composeCompilerVersion = "1.4.6"
         kotlinCompilerExtensionVersion = composeCompilerVersion
     }
 
@@ -40,13 +40,13 @@ android {
 }
 
 dependencies {
-    val composeBomVersion = "2023.01.00"
-    val activityComposeVersion = "1.6.1"
-    val material3ComposeVersion = "1.0.1"
+    val composeBomVersion = "2023.03.00"
+    val activityComposeVersion = "1.7.1"
+    val material3ComposeVersion = "1.1.0-alpha01"
 
     // navigation
     val navigationVersion = "2.5.3"
-    val navigationComposeVersion = "1.0.0"
+    val hiltNavigationComposeVersion = "1.1.0-alpha01"
 
     implementation(project(":shared"))
     implementation(project(":data:models"))
@@ -61,12 +61,12 @@ dependencies {
     implementation("androidx.compose.foundation:foundation")
     implementation("androidx.compose.material3:material3:$material3ComposeVersion")
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation("androidx.hilt:hilt-navigation-compose:$navigationComposeVersion")
+    implementation("androidx.hilt:hilt-navigation-compose:$hiltNavigationComposeVersion")
     implementation("androidx.navigation:navigation-compose:$navigationVersion")
 
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
 
-    implementation("com.google.dagger:hilt-android:2.44.2")
-    kapt("com.google.dagger:hilt-compiler:2.44.2")
+    implementation("com.google.dagger:hilt-android:2.45")
+    kapt("com.google.dagger:hilt-compiler:2.45")
 }

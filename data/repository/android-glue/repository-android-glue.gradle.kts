@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         minSdk = 26
-        targetSdk = 33
+//        targetSdk = 33
     }
 
     hilt {
@@ -26,6 +26,6 @@ android {
 dependencies {
     api(project(":data:repository:api"))
     api(project(":data:repository:android-impl"))
-    implementation("com.google.dagger:hilt-android:2.44.2")
-    kapt("com.google.dagger:hilt-compiler:2.44.2")
+    implementation("com.google.dagger:hilt-android:2.45")
+    kapt("com.google.dagger:hilt-compiler:2.45")
 }
